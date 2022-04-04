@@ -397,7 +397,7 @@ body {
 }
 
 .fakezala {
-  width: 120%;
+  width: 100%;
   height: 75%;
   transition: all 0.2s ease;
   border:0px solid;
@@ -412,10 +412,10 @@ body {
 }
 
 .reelzala {
-  width: 120%;
+  width: 100%;
   height: 75%;
   margin-top: 50%;
-  margin-left: -26%;
+  margin-left: -24%;
   transition: all 0.2s ease;
   border:0px solid;
   -moz-border-radius:7px;
