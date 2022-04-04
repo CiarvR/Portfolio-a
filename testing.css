@@ -270,10 +270,9 @@ body {
   position: fixed;
   left: 52.5%;
   top: 60%;
-  width: 500px;
+  width: 400px;
   height: 200px;
   font-family: 'Roboto Mono', monospace;
-  font-size: 20%;
 }
 /* Fin explications */
 
