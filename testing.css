@@ -220,7 +220,7 @@ body {
 
 .roboto {
   font-family: 'Roboto Mono', monospace;
-  font-size: 130%;
+  font-size: 100%;
 }
 
 .titre3 {
@@ -313,6 +313,7 @@ body {
 
 .expli {
   text-align: center;
+  font-size: 100%;
 }
 
 /* Image mentor */
@@ -459,6 +460,7 @@ body {
 .grasMentor {
   font-weight: bold;
   text-align: center;
+  font-size: 100%;
 }
 
 .grasDjn {
