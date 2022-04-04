@@ -285,7 +285,7 @@ body {
   position:fixed;
   left: 58.5%;
   top: 6%;
-  width: 600px;
+  width: 400px;
   height: 600px;
 }
 /* Fin de div mentor goal */
@@ -348,7 +348,7 @@ body {
     position: fixed;
     left: 66.4%;
     top: 60%;
-    width: 500px;
+    width: 400px;
     height: 200px;
     font-family: 'Roboto Mono', monospace;
 }
