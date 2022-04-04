@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Page d'accueil */
+
+
+.jt {
+    position: relative;
+    font-size: 20vmin;
+    font-family: 'Staatliches', sans-serif;
+    text-transform: uppercase;
+    font-display: swap;
+    text-shadow: 0 0 10px green;
+  }
+  
+  .jt__row {
+    display: block;
+  }
+  .jt__row:nth-child(1) {
+    clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+  }
+  .jt__row:nth-child(2) {
+    clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+  }
+  .jt__row:nth-child(3) {
+    clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+  }
+  .jt__row:nth-child(4) {
+    clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+  }
+  
+  .jt__row.jt__row--sibling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    witdh:800px;
+  }
+  
+  .jt__text {
+    display: block;
+    transform-origin: bottom left;
+    animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+  }
+  .jt__row:nth-child(1) .jt__text {
+    transform: translateY(-0.1em);
+  }
+  .jt__row:nth-child(2) .jt__text {
+    transform: translateY(-0.3em) scaleY(1.1);
+  }
+  .jt__row:nth-child(3) .jt__text {
+    transform: translateY(-0.5em) scaleY(1.2) ;
+  }
+  .jt__row:nth-child(4) .jt__text {
+    transform: translateY(-0.7em) scaleY(1.3) ;
+  }
+  .jt__row:nth-child(5) .jt__text {
+    transform: translateY(-0.9em) scaleY(1.4) ;
+  }
+  .jt__row:nth-child(6) .jt__text {
+    transform: translateY(-1.1em) scaleY(1.5) ;
+  }
+  
+  @keyframes moveIn {
+    50%, 100% { 
+      transform: translateY(0em)
+    }
+    0%   { 
+    opacity: 0; 
+    filter: blur(10px);
+    
+    }
+    100% { 
+    opacity: 1; 
+    filter: blur(0px);
+    }
+  }
+  
+  
+  
+  .debug .jt__row:nth-child(even) {
+    color: black;
+    background: white;
+  }
+  .debug .jt__row:nth-child(odd) {
+    color: white;
+    background: black;
+  }
+  
+  * { box-sizing: border-box }
+  
+  html, body {
+    margin: 0;
+    background: black;
+    color: green;
+    height: 100%;
+  }
+  
+  body {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* fin de page d'accueil */
+
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.blocHorizontal {
+     display: flex;
+     flex-direction: row;
+     width: 400vw;
+     transform: rotate(90deg) translateY(-100vh);
+     transform-origin: top left;
+}
+
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.one {
+    background: black;
+}
+
+.two {
+    background: black;
+}
+
+
+.three {
+    background: black;
+}
+
+.four {
+    background: black;
+}
+
+.bvn {
+  font-size: 60px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+
+.square {
+  justify-content: left;
+  background-color: black;
+  flex: 1;
+  padding: 10%;
+  margin: 10%;
+  height: 60%;
+  height: 30%;
+}
+
+#square1 {
+  background-color: black;
+  margin-top: 3%;
+}
+
+.presentation {
+  border: 2px solid;
+  justify-content: left;
+  background-color: blue;
+  flex: 1;
+}
+
+.bienvenue {
+  margin: 2% solid black;
+}
+
+.gras {
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 140%;
+}
+
+#square2 {
+  background-color: black;
+  margin-top: 3%;
+}
+
+.title {
+  font-size: 150%;
+}
+
+.titre {
+  margin-left: 0%;
+  margin-top: 0%;
+  position: absolute;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 150%;
+}
+
+.roboto {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 130%;
+}
+
+.titre3 {
+  margin-left: 0%;
+  margin-top: 0%;
+  position: absolute;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 200%;
+}
+
+/* Div donjon */
+.djn {
+  position:fixed;
+  left: 53%;
+  top: 6%;
+  width: 600px;
+  height: 600px;
+}
+/* Fin de div donjon */
+
+/* Effet image donjon */
+.djn:hover {
+  z-index: 1;
+}
+/* Fin effet image */
+
+.Kpr {
+  margin-top: 7%;
+  width: 100%;
+  height: 50%;
+  transition: all 0.2s ease;
+  border:0px solid;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+}
+/* Fin image djn keeper */
+
+/* Effet djn keeper image */
+.Kpr:hover {
+  height: 55%;
+}
+/* Fin d'image djn keeper */
+
+/* Explications devoir donjon */
+.explications {
+  position: fixed;
+  left: 52.5%;
+  top: 60%;
+  width: 500px;
+  height: 200px;
+  font-family: 'Roboto Mono', monospace;
+}
+/* Fin explications */
+
+.explain {
+  text-align: center;
+}
+
+/* Div mentor goal */
+.mentor {
+  position:fixed;
+  left: 58.5%;
+  top: 6%;
+  width: 600px;
+  height: 600px;
+}
+/* Fin de div mentor goal */
+
+.mentor:hover {
+  z-index: 2;
+}
+
+/* Effet image mentor */
+.mentorImg:hover {
+  height: 55%;
+}
+/* Fin image mentor */
+
+/* Explications mentorgoal */
+.explimentor {
+  position: fixed;
+  left: 59.5%;
+  top: 60%;
+  width: 500px;
+  height: 200px;
+  font-family: 'Roboto Mono', monospace;
+}
+/* Fin d'explications mentorgoal */
+
+.expli {
+  text-align: center;
+}
+
+/* Image mentor */
+.mentorImg {
+  width: 100%;
+  height: 50%;
+  transition: all 0.2s ease;
+  border:0px solid;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  margin-top: 7%;
+}
+/* Fin d'image mentor */
+
+/* Liberty commerce Div */
+.liberty {
+  position:fixed;
+  left: 62.5%;
+  top: 6%;
+  width: 600px;
+  height: 600px;
+}
+/* Fin de div liberty commece */
+
+.liberta {
+  text-align: center;
+}
+
+/* Explications liberty commerce */
+.expliberty {
+    position: fixed;
+    left: 66.4%;
+    top: 60%;
+    width: 500px;
+    height: 200px;
+    font-family: 'Roboto Mono', monospace;
+}
+/* Fin d'explications liberty */
+
+.tympiano {
+  width: 100%;
+  height: 50%;
+  transition: all 0.2s ease;
+  border:0px solid;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  margin-top: 7%;
+}
+
+.tympiano:hover {
+  height: 55%;
+}
+
+.zalafake {
+  position:fixed;
+  left: 77%;
+  top: 30%;
+  width: 600px;
+  height: 600px;
+}
+
+.zalareel {
+  position:fixed;
+  left: 79.5%;
+  top: 15%;
+  width: 600px;
+  height: 600px;
+}
+
+.pageJS {
+  position:fixed;
+  left: 91%;
+  top: 8%;
+  width: 600px;
+  height: 600px;
+}
+
+.fakezala {
+  width: 150%;
+  height: 75%;
+  transition: all 0.2s ease;
+  border:0px solid;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+}
+
+.fakezala:hover {
+  height: 90%;
+}
+
+.reelzala {
+  width: 150%;
+  height: 75%;
+  margin-top: 50%;
+  margin-left: -32%;
+  transition: all 0.2s ease;
+  border:0px solid;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+}
+
+.zalafake:hover {
+  z-index: 1;
+}
+
+
+.js {
+  width: 600px;
+  height: 400px;
+  border:0px solid;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+}
+
+.explik {
+  margin-top: 4%;
+  text-align: center;
+  width: 50%;
+  height: 10%;
+  margin-left: 12.5%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+.xplikJS {
+  margin-top: 7%;
+  text-align: center;
+  margin-left: -95%;
+  margin-top: 140%;
+  width: 170%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.grasTympiano {
+  font-weight: bold;
+  text-align: center;
+}
+
+.grasMentor {
+  font-weight: bold;
+  text-align: center;
+}
+
+.grasDjn {
+  font-weight: bold;
+  text-align: center;
+}
+
+.DocGras {
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  margin-left: -120%;
+}
+
+.horizontal {
+  font-size: 10%;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.contact {
+  width: 130%;
+  height: 5%;
+  background-color: black;
+  margin-top: 50%;
+  margin-left: -75%;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 130%;
+}
