@@ -404,6 +404,7 @@ body {
   -moz-border-radius:7px;
   -webkit-border-radius:7px;
   border-radius:7px;
+
 }
 
 .fakezala:hover {
@@ -414,12 +415,13 @@ body {
   width: 150%;
   height: 75%;
   margin-top: 50%;
-  margin-left: -20%;
+  margin-left: -32%;
   transition: all 0.2s ease;
   border:0px solid;
   -moz-border-radius:7px;
   -webkit-border-radius:7px;
   border-radius:7px;
+
 }
 
 .zalafake:hover {
