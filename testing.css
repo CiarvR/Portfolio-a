@@ -455,6 +455,7 @@ body {
   margin-left: -100%;
   width: 170%;  
   font-family: 'Roboto Mono', monospace;
+  font-size: 70%;
 }
 
 .grasTympiano {
@@ -478,6 +479,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   margin-left: -100%;
+  font-size: 70%;
 }
 
 .horizontal {
