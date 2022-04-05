@@ -450,10 +450,11 @@ body {
 
 
 .xplikJS {
-  margin-top: 200%;
+  margin-top: 190%;
   text-align: center;
   margin-left: -70%;
-  width: 170%;
+  width: 170%;  
+  font-family: 'Roboto Mono', monospace;
 }
 
 .grasTympiano {
